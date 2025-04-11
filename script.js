@@ -146,7 +146,7 @@ function getSujeito(){
 
     if(caso == 7) { // Decidir o elemento da criatura
         
-        sujeitoSorteado = `criatura de ${getElemento()}`;
+             sujeitoSorteado = `criatura de ${getElemento()}`;
         
     }   else {
         
