@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="script-segunda-pagina.js"></script>
 
     <title>Gerador de Encontros - OP</title>
+
 </head>
 <body>
 
-    <div class = "titleBox">
+    <div class = "titleBox" id = "tituloDiv">
+        <div class = "aviso"> Essa página não tem um banco de dados, caso a atualize, a frase será perdida.</div>
         
         <div class = "titulo"> 
             Um(a) <em id="sujeito">SUJEITO</em> <em id="acao">AÇÃO</em> em um(a) 
@@ -23,17 +27,30 @@
 
     </div> 
 
-    <button onclick="getSujeito()"> GERAR NOVO SUJEITO </button>
-    <button onclick="getAcao()"> GERAR NOVA AÇÃO </button> 
-    <button onclick="getLocal()"> GERAR NOVO LOCAL </button> 
-    <button onclick="getAmigo()"> GERAR NOVO AMIGO </button> 
-    <button onclick="getObjeto();"> GERAR NOVO OBJETO </button> 
-    <button onclick="getEvento();"> GERAR NOVO EVENTO </button> 
-    <br>
-    <br>
-    <br>
-    <button onclick="getEncontro()"> GERAR ENCONTRO </button>
+    <div class = "linha"> </div>
     
+    <!-- gerador de frase -->
+    <div class = "geraFrase">
+        <br>
+        <button onclick="getSujeito()"> GERAR NOVO SUJEITO </button>
+        <button onclick="getAcao()"> GERAR NOVA AÇÃO </button> 
+        <button onclick="getLocal()"> GERAR NOVO LOCAL </button> 
+        <button onclick="getAmigo()"> GERAR NOVO AMIGO </button> 
+        <button onclick="getObjeto();"> GERAR NOVO OBJETO </button> 
+        <button onclick="getEvento();"> GERAR NOVO EVENTO </button> 
+        <br> <br> <br>
+        <button onclick="getEncontro()"> GERAR ENCONTRO </button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class = "linha"> </div>
+    
+        <br>
+        <a href = "gera-criatura.html"> <button onclick="guardarFrase(tituloDiv)"> Ir para a próxima página  </button> </a>
+    
+    </div>
+
 </body>
 </html>
 
